@@ -10,25 +10,19 @@ public class SuperMalHecho {
             a = scanner.nextLine();
             System.out.println("Ingrese el precio del precio :" + x);
             precio = scanner.nextDouble();
-            System.out.println(a + " " + precio);
             scanner.nextLine();
-            scanner.nextDouble();
-            // double imp1 = precio * 0.19;
-            // double total = 0;
-            // if (precio > 10000) {
-            // double desc1 = precio * 0.10;
-            // total = (precio + imp1) - desc1;
-            // } else {
-            // total = precio + imp1;
-            // }
-            // System.out.println("Producto: " + a + ", Precio final: " + total);
-            // precio = 0;
+            double imp1 = precio * 0.19;
+             double total = 0;
+             if (precio > 10000) {
+             double desc1 = precio * 0.10;
+             total = (precio + imp1) - desc1;
+             } else {
+             total = precio + imp1;
+             }
+             System.out.println("Producto: " + a + ", Precio final: " + total);
+             precio = 0.0;   imp1=0; 
+          
         }
-        // int j =0;
-        // do {
-        //     j=j+1;
-            
-        // } while (j < 6);
         scanner.close();
     }
 }
